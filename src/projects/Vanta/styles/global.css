@@ -20,11 +20,14 @@ html:has(.vanta-app) {
 
 body {
   margin: 0;
-  min-width: 320px;
   min-height: 100vh;
 
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+body:has(.vanta-app) {
+  min-width: 320px;
 }
 
 body:has(.vanta-app) {

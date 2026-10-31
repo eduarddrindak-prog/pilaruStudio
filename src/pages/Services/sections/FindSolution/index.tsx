@@ -59,7 +59,7 @@ export default function FindSolution() {
             budget and stage of growth.
           </p>
         </motion.div>
-        <div className="mt-20 grid gap-6 lg:grid-cols-3">
+        <div className="mt-20 grid gap-6 lg:grid-cols-3 max-[767px]:hidden">
   <div
     className="
       rounded-3xl
@@ -169,11 +169,40 @@ export default function FindSolution() {
   Learn more
   <span>→</span>
 </Button>
-  </div>
-
-  
-  
 </div>
+        </div>
+
+        <div className="mt-12 hidden divide-y divide-white/10 rounded-3xl border border-white/10 bg-white/[0.02] px-5 max-[767px]:block">
+          <article className="py-5 first:pt-5">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+              <h3 className="text-lg font-semibold">Just Starting</h3>
+              <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-[#4F8EF7]">For Startups</p>
+            </div>
+            <p className="mt-2 text-sm leading-6 text-secondary-text">
+              Perfect for startups and personal brands that need a professional online presence quickly.
+            </p>
+          </article>
+
+          <article className="py-5">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+              <h3 className="text-lg font-semibold">Growing Business</h3>
+              <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-[#4F8EF7]">For Business</p>
+            </div>
+            <p className="mt-2 text-sm leading-6 text-secondary-text">
+              Need more leads, stronger branding and better conversion? This option is built for scaling companies.
+            </p>
+          </article>
+
+          <article className="py-5">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+              <h3 className="text-lg font-semibold">Established Company</h3>
+              <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-[#4F8EF7]">For Enterprise</p>
+            </div>
+            <p className="mt-2 text-sm leading-6 text-secondary-text">
+              Enterprise-grade websites designed for larger businesses, advanced features and long-term growth.
+            </p>
+          </article>
+        </div>
 
 <div
   className="
@@ -289,6 +318,7 @@ export default function FindSolution() {
   size="lg"
   rounded="full"
   withArrow
+  className="max-[767px]:px-5 max-[767px]:py-3 max-[767px]:text-sm"
 >
   Book Free Consultation
 </Button>

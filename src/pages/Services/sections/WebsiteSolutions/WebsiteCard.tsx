@@ -34,6 +34,7 @@ export default function WebsiteCard({ website }: Props) {
         backdrop-blur-[2px]
 
         p-8
+        max-[639px]:p-6
 
         transition-all
         duration-300
@@ -87,7 +88,7 @@ export default function WebsiteCard({ website }: Props) {
       />
 
       {/* Badge */}
-      <div>
+      <div className="max-[639px]:hidden">
         <span
           className="
             inline-flex
@@ -99,6 +100,7 @@ bg-surface
             py-1.5
 
             text-[10px]
+            max-[639px]:text-[9px]
             font-medium
             uppercase
             tracking-[0.22em]
@@ -120,6 +122,7 @@ bg-surface
         className="
           mt-6
           text-3xl
+          max-[639px]:text-2xl
           font-semibold
           tracking-tight
 
@@ -136,6 +139,9 @@ bg-surface
   className="
     mt-5
     leading-7
+    max-[639px]:mt-4
+    max-[639px]:text-sm
+    max-[639px]:leading-6
     text-secondary-text
   "
 >
@@ -152,6 +158,7 @@ bg-surface
     transition-transform
     duration-300
     group-hover:scale-x-100
+    max-[639px]:my-6
 
   "
 />
@@ -222,6 +229,10 @@ bg-surface
     max-[1020px]:gap-x-10
     max-[1020px]:gap-y-3
     max-[1020px]:space-y-0
+    max-[639px]:grid
+    max-[639px]:grid-cols-2
+    max-[639px]:gap-x-4
+    max-[639px]:gap-y-3
   "
 >
     {website.idealFor.map((item) => (
@@ -231,6 +242,8 @@ bg-surface
           flex
           items-center
           gap-3
+          text-sm
+          max-[639px]:text-[13px]
           text-secondary-text
           transition-colors
           duration-300
@@ -252,6 +265,7 @@ bg-surface
     max-[1020px]:block
     max-[1020px]:my-6
     max-[1020px]:h-px
+    max-[639px]:hidden
 
     bg-border
 
@@ -271,6 +285,7 @@ bg-surface
     grid
     grid-cols-2
     gap-8
+    max-[639px]:hidden
   "
 >
   <div>
@@ -328,6 +343,7 @@ bg-surface
     duration-300
     delay-150
     group-hover:scale-x-100
+    max-[639px]:hidden
   "
 />
 
@@ -347,7 +363,7 @@ bg-surface
   "
 >
           <div>
-            <p className="text-sm text-secondary-text">
+            <p className="text-sm text-secondary-text max-[639px]:hidden">
               Starting from
             </p>
 
@@ -355,6 +371,7 @@ bg-surface
               className="
                 mt-2
                 text-3xl
+                max-[639px]:text-2xl
                 font-semibold
 
                 transition-colors
@@ -374,6 +391,7 @@ bg-surface
               gap-2
 
               text-sm
+              max-[639px]:text-xs
               font-medium
 
               transition-all

@@ -4,7 +4,7 @@ export const heroContent = {
   title: "Choose the right website\nfor your business.",
 
   description:
-    "Whether you need a simple landing page, a complete business website or a custom solution, we'll help you create a website that fits your goals and helps your business grow online.",
+    "Whether you need a focused landing page, a complete business website or a refresh of your existing site, we'll help you choose the right next step for your business.",
 
   button: "Start Your Project",
 };
@@ -29,11 +29,11 @@ export const websiteTypes = [
       "Marketing Campaigns",
     ],
 
-    complexity: 1,
+    complexity: 2,
 
     duration: "1–2 weeks",
 
-    price: "€299",
+    price: "≈ €25–50",
   },
 
   {
@@ -55,36 +55,36 @@ export const websiteTypes = [
       "Agencies",
     ],
 
-    complexity: 2,
+    complexity: 3,
 
     duration: "2–4 weeks",
 
-    price: "€899",
+    price: "≈ €50–100",
   },
 
   {
     id: "custom",
 
-    badge: "MOST FLEXIBLE",
+    badge: "FOR EXISTING SITES",
 
-    title: "Custom Website",
+    title: "Website Refresh",
 
     description:
-      "A fully tailored website designed around your specific business goals and unique requirements.",
+      "Update an existing website with a more current design, improved mobile experience or the features your business needs now. We keep what works and improve what does not.",
 
-    bestFor: "Unique requirements",
+    bestFor: "Businesses with an outdated website",
 
     idealFor: [
-      "Startups",
-      "SaaS",
-      "Platforms",
-      "Large Businesses",
+      "Design Updates",
+      "Mobile Improvements",
+      "New Features",
+      "Content Changes",
     ],
 
-    complexity: 3,
+    complexity: 1,
 
-    duration: "4–8 weeks",
+    duration: "1–3 weeks",
 
-    price: "Custom Quote",
+    price: "≈ €15–75",
   },
 ];

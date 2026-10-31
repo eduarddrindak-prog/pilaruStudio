@@ -79,7 +79,7 @@ export default function DevelopmentProcess() {
     const [activeIndex, setActiveIndex] = useState(0);
     const activeStep = processSteps[activeIndex];
   return (
-    <section className="py-section bg-background">
+    <section className="relative overflow-x-clip py-section bg-background">
       <SectionContainer className="max-w-[1500px]">
         <motion.div
   {...fadeLeft}
@@ -174,7 +174,6 @@ ${
     relative
     mt-0
     flex
-    h-[560px]
     flex-col
     overflow-hidden
     rounded-[36px]
